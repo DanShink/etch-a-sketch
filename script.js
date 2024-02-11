@@ -25,9 +25,9 @@ function createSquares(size) {
 }
 
 function changeGridSize() {
-    let size = prompt("What size grid would you like?");
+    let size = prompt("What size grid would you like? (Max: 100)");
     console.log(size);
-    if(size < 1 | size > 64) {
+    if(size < 1 | size > 100) {
         return null;
     }
     removeGrid();
